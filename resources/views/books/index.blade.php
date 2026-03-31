@@ -3,11 +3,11 @@
 <ul>
     @foreach($books as $books)
         <li>
-            <h2>{{ $book->title }}</h2>
+            <h2>{{ $books->title }}</h2>
             <div>
-                <a href="/books/{{ $book->id }}">Show</a>
-                <a href="/books/{{ $book->id }}/edit">Edit</a>
+                <a href="/books/{{ $books->id }}">Show</a>
+                <a href="/books/{{ $books->id }}/edit">Edit</a>
             </div>
         </li>
     @endforeach
-</ul>
+</ul> 
